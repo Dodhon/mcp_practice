@@ -5,3 +5,4 @@ json /Users/thuptenwangpo/Library/Application Support/Claude/claude_desktop_conf
 neo4j/.env
 *.pyc
 text-to-graph/.env
+message_stats.json
