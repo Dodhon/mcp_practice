@@ -7,7 +7,11 @@ const fs = require('fs');
 const path = require('path');
 
 // Load environment variables from .env file
-require('dotenv').config();
+require('dotenv').config({ path: './.env' });
+
+// Debug environment variables
+console.log('MS_CLIENT_ID loaded:', !!process.env.MS_CLIENT_ID);
+console.log('MS_CLIENT_SECRET loaded:', !!process.env.MS_CLIENT_SECRET);
 
 // Log to console
 console.log('Starting Outlook Authentication Server');
@@ -24,7 +28,11 @@ const AUTH_CONFIG = {
     'Mail.Send',
     'Calendars.Read',
     'Calendars.ReadWrite',
-    'Contacts.Read'
+    'Contacts.Read',
+    'Team.ReadBasic.All',
+    'Channel.ReadBasic.All',
+    'ChannelMessage.Read.All',
+    'ChannelMessage.Send'
   ],
   tokenStorePath: path.join(process.env.HOME || process.env.USERPROFILE, '.outlook-mcp-tokens.json')
 };

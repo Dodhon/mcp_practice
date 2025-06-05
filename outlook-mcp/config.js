@@ -17,10 +17,25 @@ module.exports = {
   
   // Authentication configuration
   AUTH_CONFIG: {
-    clientId: process.env.OUTLOOK_CLIENT_ID || '',
-    clientSecret: process.env.OUTLOOK_CLIENT_SECRET || '',
+    clientId: process.env.MS_CLIENT_ID || '',
+    clientSecret: process.env.MS_CLIENT_SECRET || '',
     redirectUri: 'http://localhost:3333/auth/callback',
-    scopes: ['Mail.Read', 'Mail.ReadWrite', 'Mail.Send', 'User.Read', 'Calendars.Read', 'Calendars.ReadWrite'],
+    scopes: [
+      // Email permissions
+      'Mail.Read', 
+      'Mail.ReadWrite', 
+      'Mail.Send', 
+      // User permissions
+      'User.Read', 
+      // Calendar permissions
+      'Calendars.Read', 
+      'Calendars.ReadWrite',
+      // Teams permissions for MVP
+      'Team.ReadBasic.All',
+      'Channel.ReadBasic.All', 
+      'ChannelMessage.Read.All',
+      'ChannelMessage.Send'
+    ],
     tokenStorePath: path.join(homeDir, '.outlook-mcp-tokens.json'),
     authServerUrl: 'http://localhost:3333'
   },
@@ -37,6 +52,11 @@ module.exports = {
   
   // Calendar constants
   CALENDAR_SELECT_FIELDS: 'id,subject,bodyPreview,start,end,location,organizer,attendees,isAllDay,isCancelled',
+  
+  // Teams constants
+  TEAMS_SELECT_FIELDS: 'id,displayName,description,webUrl,isArchived,visibility,createdDateTime,memberSettings',
+  CHANNELS_SELECT_FIELDS: 'id,displayName,description,webUrl,membershipType,createdDateTime,isFavoriteByDefault,email',
+  MESSAGES_SELECT_FIELDS: 'id,createdDateTime,lastModifiedDateTime,messageType,importance,webUrl,from,body,mentions,reactions',
   
   // Pagination
   DEFAULT_PAGE_SIZE: 25,

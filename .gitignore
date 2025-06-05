@@ -6,3 +6,4 @@ neo4j/.env
 *.pyc
 text-to-graph/.env
 message_stats.json
+.DS_Store
