@@ -7,3 +7,5 @@ neo4j/.env
 text-to-graph/.env
 message_stats.json
 .DS_Store
+data-gen/requests.xlsx
+data-gen/resources.xlsx
