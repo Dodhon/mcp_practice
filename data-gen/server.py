@@ -45,33 +45,35 @@ talent_data = {
 
 # Core skills and competencies - every employee/job gets ALL of these
 ALL_SKILLS = [
-    "Python", "JavaScript", "SQL", "React", "AWS", 
-    "Docker", "Machine Learning", "Data Science", "Cybersecurity", "CI/CD"
+    "System Architecture", "Cloud Architecture", "Solution Design", "Enterprise Integration",
+    "Technical Documentation", "Stakeholder Management", "Infrastructure Design",
+    "Security Architecture", "Data Architecture", "API Design"
 ]
 
 ALL_COMPETENCIES = [
-    "Team Leadership", "Strategic Thinking", "Public Speaking", "Technical Writing",
-    "Creative Problem Solving", "Product Management", "Adaptability", "Learning Agility", 
-    "Critical Thinking", "Emotional Intelligence"
+    "Strategic Planning", "Technical Leadership", "Communication", "Decision Making",
+    "Enterprise Thinking", "Innovation", "Risk Management", "Business Acumen",
+    "Change Management", "Mentorship"
 ]
 
 DEPARTMENTS = [
-    "Engineering", "Product", "Data Science", "DevOps", "Security",
-    "AI/ML", "Research", "Innovation", "Platform", "Mobile", "Frontend", "Backend"
+    "Enterprise Architecture", "Solution Architecture", "Cloud Architecture",
+    "Security Architecture", "Data Architecture", "Integration Architecture",
+    "Infrastructure Architecture", "Business Architecture"
 ]
 
 INDUSTRIES = [
-    "FinTech", "HealthTech", "EdTech", "CleanTech", "Autonomous Vehicles",
-    "Space Technology", "Quantum Computing", "Biotechnology", "Robotics",
-    "Renewable Energy", "Smart Cities", "Virtual Reality", "Blockchain"
+    "Financial Services", "Healthcare", "Government", "Telecommunications",
+    "Manufacturing", "Retail", "Energy", "Transportation",
+    "Education", "Insurance", "Technology", "Consulting"
 ]
 
 FUTURE_JOB_TITLES = [
-    "AI Ethics Specialist", "Quantum Software Engineer", "Metaverse Architect",
-    "Sustainability Tech Lead", "Human-AI Interaction Designer", "Space Software Engineer",
-    "Carbon Credit Developer", "Autonomous Systems Engineer", "Digital Twin Specialist",
-    "Biotech Software Engineer", "Neural Interface Developer", "Climate Data Scientist",
-    "Drone Operations Manager", "Voice Interface Designer", "Blockchain Governance Lead"
+    "Enterprise Architect", "Chief Architect", "Principal Architect",
+    "Lead Solution Architect", "Senior Cloud Architect", "Data Architecture Lead",
+    "Security Architecture Lead", "Integration Architect", "Infrastructure Architect",
+    "Business Solutions Architect", "Digital Transformation Architect",
+    "Technical Architecture Consultant", "Architecture Governance Lead"
 ]
 
 
@@ -260,8 +262,9 @@ def create_random_employee() -> Employee:
     ]
     
     roles = [
-        "Software Engineer", "Senior Developer", "Tech Lead", "Principal Engineer",
-        "Data Scientist", "DevOps Engineer", "Product Manager", "Research Scientist"
+        "Architecture Analyst", "Associate Architect", "Solution Architect",
+        "Senior Solution Architect", "Lead Architect", "Principal Architect",
+        "Enterprise Architect", "Chief Architect"
     ]
     
     return Employee(
