@@ -47,7 +47,7 @@ talent_data = {
 ALL_SKILLS = [
     "System Architecture", "Cloud Architecture", "Solution Design", "Enterprise Integration",
     "Technical Documentation", "Stakeholder Management", "Infrastructure Design",
-    "Security Architecture", "Data Architecture", "API Design"
+    "Security Architecture", "Data Architecture"
 ]
 
 ALL_COMPETENCIES = [
@@ -59,21 +59,14 @@ ALL_COMPETENCIES = [
 DEPARTMENTS = [
     "Enterprise Architecture", "Solution Architecture", "Cloud Architecture",
     "Security Architecture", "Data Architecture", "Integration Architecture",
-    "Infrastructure Architecture", "Business Architecture"
-]
-
-INDUSTRIES = [
-    "Financial Services", "Healthcare", "Government", "Telecommunications",
-    "Manufacturing", "Retail", "Energy", "Transportation",
-    "Education", "Insurance", "Technology", "Consulting"
+    "Infrastructure Architecture", "Business Architecture", "AI Architecture"
 ]
 
 FUTURE_JOB_TITLES = [
     "Enterprise Architect", "Chief Architect", "Principal Architect",
     "Lead Solution Architect", "Senior Cloud Architect", "Data Architecture Lead",
     "Security Architecture Lead", "Integration Architect", "Infrastructure Architect",
-    "Business Solutions Architect", "Digital Transformation Architect",
-    "Technical Architecture Consultant", "Architecture Governance Lead"
+    "Business Solutions Architect", "Digital Transformation Architect"
 ]
 
 
